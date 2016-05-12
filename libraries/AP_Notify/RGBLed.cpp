@@ -126,6 +126,12 @@ void RGBLed::update_colours(void)
         return;
     }
     
+    _red_des = _led_bright;
+    _blue_des = _led_off;
+    _green_des = _led_medium;
+    
+    /*
+    
     // save trim and esc calibration pattern
     if (AP_Notify::flags.save_trim || AP_Notify::flags.esc_calibration) {
         switch(step) {
@@ -313,6 +319,7 @@ void RGBLed::update_colours(void)
             }
         }
     }
+    */
 }
 
 // update - updates led according to timed_updated.  Should be called
