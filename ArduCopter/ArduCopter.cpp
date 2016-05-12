@@ -74,6 +74,7 @@
  */
 
 #include "Copter.h"
+// #include "RGBLed.h"  // Saurabh Change Made
 
 #define SCHED_TASK(func, rate_hz, max_time_micros) SCHED_TASK_CLASS(Copter, &copter, func, rate_hz, max_time_micros)
 
@@ -621,9 +622,5 @@ void Copter::update_altitude()
         Log_Write_Control_Tuning();
     }
 }
-
-/*void Copter::Joshtestblink() {
-    
-}*/
 
 AP_HAL_MAIN_CALLBACKS(&copter);
