@@ -622,4 +622,8 @@ void Copter::update_altitude()
     }
 }
 
+/*void Copter::Joshtestblink() {
+    
+}*/
+
 AP_HAL_MAIN_CALLBACKS(&copter);
