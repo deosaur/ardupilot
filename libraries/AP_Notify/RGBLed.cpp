@@ -111,8 +111,8 @@ void RGBLed::update_colours(void)
     }
     
     _red_des = _led_bright;
-    _blue_des = _led_medium;
-    _green_des = _led_off;
+    _blue_des = _led_off;
+    _green_des = _led_medium;
     
     /*
     // save trim and esc calibration pattern
