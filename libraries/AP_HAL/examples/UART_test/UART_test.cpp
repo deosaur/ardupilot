@@ -97,6 +97,7 @@ void loop(void)
     ::printf("Hello on debug console at %.3f seconds\n", hal.scheduler->millis()*0.001f);
 #endif
 
+    //hal.console->printf()
     hal.scheduler->delay(1000);
 }
 
